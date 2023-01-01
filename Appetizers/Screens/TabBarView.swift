@@ -27,7 +27,7 @@ struct TabBarView: View {
                     Text("Account")
                 }
         }
-        .accentColor(Color(.label))
+        .accentColor(Color(.systemPink))
     }
 }
 
