@@ -26,6 +26,7 @@
 		2C1345812961D4DB0066C0EF /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1345802961D4DB0066C0EF /* APButton.swift */; };
 		2C1345832961D6240066C0EF /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1345822961D6240066C0EF /* XDismissButton.swift */; };
 		2C1345852961E2FC0066C0EF /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1345842961E2FC0066C0EF /* AccountViewModel.swift */; };
+		2C1345882961E3B60066C0EF /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1345872961E3B60066C0EF /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		2C1345802961D4DB0066C0EF /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		2C1345822961D6240066C0EF /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		2C1345842961E2FC0066C0EF /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		2C1345872961E3B60066C0EF /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		2C1345492961A17C0066C0EF /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				2C1345862961E3AC0066C0EF /* Extensions */,
 				2C13455A2961A18C0066C0EF /* Utilities */,
 				2C1345592961A1880066C0EF /* Views */,
 				2C13455C2961A19E0066C0EF /* Network */,
@@ -218,6 +221,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		2C1345862961E3AC0066C0EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C1345872961E3B60066C0EF /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1345882961E3B60066C0EF /* String+Ext.swift in Sources */,
 				2C1345692961A5FF0066C0EF /* Appetizer.swift in Sources */,
 				2C13456C2961A6FC0066C0EF /* AppetizerListCell.swift in Sources */,
 				2C1345632961A2890066C0EF /* OrderView.swift in Sources */,

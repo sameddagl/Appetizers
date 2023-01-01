@@ -30,4 +30,16 @@ struct AlertContext {
     static let invalidData = AlertItem(title: Text("Invalid Data"),
                                          message: Text("The data received from the server was invalid. Please try again."),
                                          dismissButton: .default(Text("Okay")))
+    
+    static let emptyForm = AlertItem(title: Text("Invalid Form"),
+                                     message: Text("Please fill up all the informations."),
+                                     dismissButton: .default(Text("Okay")))
+    
+    static let invalidEmail = AlertItem(title: Text("Invalid Email"),
+                                     message: Text("Please ensure your email adress is correct."),
+                                     dismissButton: .default(Text("Okay")))
+    
+    static let successfullySaved = AlertItem(title: Text("Successfully Saved"),
+                                     message: Text("Your informations was successfully saved."),
+                                     dismissButton: .default(Text("Okay")))
 }
