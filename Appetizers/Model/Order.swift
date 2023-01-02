@@ -27,4 +27,14 @@ final class Order: ObservableObject {
     func delete(at index: IndexSet) {
         items.remove(atOffsets: index)
     }
+    
+    func orderCount(of appetizer: Appetizer) -> Int {
+        var count = 0
+        items.forEach { food in
+            if food == appetizer {
+                count += 1
+            }
+        }
+        return count
+    }
 }

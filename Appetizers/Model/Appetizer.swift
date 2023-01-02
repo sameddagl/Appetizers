@@ -13,7 +13,7 @@ struct AppetizerResponse: Decodable {
 }
 
 // MARK: - Request
-struct Appetizer: Decodable, Identifiable {
+struct Appetizer: Decodable, Identifiable, Equatable {
     let id: Int
     let price: Double
     let protein, calories: Int

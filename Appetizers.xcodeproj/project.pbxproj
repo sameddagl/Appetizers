@@ -31,6 +31,8 @@
 		2C13458D2961EED10066C0EF /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13458C2961EED10066C0EF /* EmptyStateView.swift */; };
 		2C13458F2961F17C0066C0EF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13458E2961F17C0066C0EF /* Order.swift */; };
 		2C1345912961F3EB0066C0EF /* AppetizerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1345902961F3EB0066C0EF /* AppetizerDetailViewModel.swift */; };
+		2C13459329620CC80066C0EF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13459229620CC80066C0EF /* Date+Ext.swift */; };
+		2C134597296217B50066C0EF /* OrderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C134596296217B50066C0EF /* OrderListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		2C13458C2961EED10066C0EF /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		2C13458E2961F17C0066C0EF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2C1345902961F3EB0066C0EF /* AppetizerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailViewModel.swift; sourceTree = "<group>"; };
+		2C13459229620CC80066C0EF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		2C134596296217B50066C0EF /* OrderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				2C13456B2961A6FC0066C0EF /* AppetizerListCell.swift */,
+				2C134596296217B50066C0EF /* OrderListCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				2C1345872961E3B60066C0EF /* String+Ext.swift */,
+				2C13459229620CC80066C0EF /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 				2C1345692961A5FF0066C0EF /* Appetizer.swift in Sources */,
 				2C13458D2961EED10066C0EF /* EmptyStateView.swift in Sources */,
 				2C13456C2961A6FC0066C0EF /* AppetizerListCell.swift in Sources */,
+				2C13459329620CC80066C0EF /* Date+Ext.swift in Sources */,
 				2C1345632961A2890066C0EF /* OrderView.swift in Sources */,
 				2C1345812961D4DB0066C0EF /* APButton.swift in Sources */,
 				2C13458F2961F17C0066C0EF /* Order.swift in Sources */,
@@ -332,6 +339,7 @@
 				2C13457B2961BA110066C0EF /* AppetizerRemoteImage.swift in Sources */,
 				2C1345612961A2820066C0EF /* AppetizerListView.swift in Sources */,
 				2C13457E2961BEF10066C0EF /* AppetizerDetailView.swift in Sources */,
+				2C134597296217B50066C0EF /* OrderListCell.swift in Sources */,
 				2C1345702961ADC10066C0EF /* NetworkError.swift in Sources */,
 				2C1345752961B2FA0066C0EF /* Alert.swift in Sources */,
 				2C1345672961A29D0066C0EF /* TabBarView.swift in Sources */,

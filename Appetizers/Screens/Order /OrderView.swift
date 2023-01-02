@@ -16,7 +16,7 @@ struct OrderView: View {
                 VStack {
                     List {
                         ForEach(order.items) { appetizer in
-                            AppetizerListCell(appetizer: appetizer)
+                            OrderListCell(appetizer: appetizer, orderCount: order.orderCount(of: appetizer))
                         }
                         .onDelete { index in
                             order.delete(at: index)

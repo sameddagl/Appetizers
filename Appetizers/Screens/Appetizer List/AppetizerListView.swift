@@ -17,19 +17,24 @@ struct AppetizerListView: View {
                     AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
                             viewModel.selectedAppetizer = appetizer
-                            viewModel.isShowingDetail = true
+                            withAnimation {
+                                viewModel.isShowingDetail = true
+                            }
                         }
                 }
+                .blur(radius: viewModel.isShowingDetail ? 10 : 0)
+                .listStyle(.plain)
                 .disabled(viewModel.isShowingDetail)
                 .navigationTitle("Appetizers")
             }
             .onAppear {
                 viewModel.getAppetizers()
             }
-            .blur(radius: viewModel.isShowingDetail ? 20 : 0)
             
             if viewModel.isShowingDetail {
-                AppetizerDetailView(appetizer: viewModel.selectedAppetizer!, isShowingDetail: $viewModel.isShowingDetail)
+                AppetizerDetailView(viewModel: AppetizerDetailViewModel(appetizer: viewModel.selectedAppetizer!,
+                                                                        isShowingDetail: $viewModel.isShowingDetail))
+                .transition(.scale)
             }
             
             if viewModel.isLoading {

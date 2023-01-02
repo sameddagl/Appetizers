@@ -9,8 +9,8 @@ import SwiftUI
 
 final class AppetizerDetailViewModel: ObservableObject {
     let appetizer: Appetizer
-    @Published var isShowingDetail: Binding<Bool>
-    
+    var isShowingDetail: Binding<Bool>
+        
     init(appetizer: Appetizer, isShowingDetail: Binding<Bool>) {
         self.appetizer = appetizer
         self.isShowingDetail = isShowingDetail
